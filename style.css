@@ -523,24 +523,38 @@ hr{
     Media Query
 ---------------*/
 @media (min-width:689px) and (max-width:1050px) {
-    .details{
-        display: none;
-    }
-    header{
-        height: 700px;
-    }
-    .second-section-right-text{
-        margin-top: 50px;
-margin-left: 50px;
-    }
-.management-details img{
-height: 750px !important;
+body{
+overflow-x: hidden;
 }
+
+html{
+overflow-x: hidden;
+}
+
+.details{
+width: 90%;
+margin-top: 16.3%;
+}
+
+header{
+height: 700px;
+}
+
+.second-section-right-text{
+margin-top: 50px;
+margin-left: 50px;
+}
+
+.management-details img{
+height: 550px !important;
+}
+
 .tour-details{
 margin-left: 50px;
 }
+
 .second-section i{
-    font-size: 35px;
+font-size: 35px;
 }
 
 }
