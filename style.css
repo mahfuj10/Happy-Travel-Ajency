@@ -1,0 +1,521 @@
+body{
+    margin: 0;
+    padding: 0;
+overflow-x: hidden;
+
+
+}
+/*------------------------
+    this is header
+-------------------*/
+header{
+
+    background-image: url(images/Website\ background.jpg);
+    height: 100%;
+    background-size: cover;
+}
+/*  Navbar */
+.navbar{
+margin-top: 0px;
+padding-top: 0px;
+}
+
+.first-button{
+    padding: 0px 25px;
+    background-color: #33313B;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    height: 90px;
+    padding-top: 15px;
+    margin-top: 0;
+}
+nav li{
+    margin-left: 30px;
+}
+a{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.904) !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.second-button{
+    background-color: #F9AB30;
+    padding: 14px 20px;
+    margin-left: 50px;
+    border: none;
+    margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.second-button , a {
+    text-decoration: none;
+  
+}
+/* Audio */
+.audio-play-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #F9AB30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+}
+.fa-play{
+    font-size: 15px;
+    color: #fff !important;
+}
+.header-text{
+    margin-top: 15%;
+}
+.header-text > p{
+    color: #fff;
+}
+.header-text > h1{
+    font-size: 55px;
+    letter-spacing: 4px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+}
+.details{
+display: flex;
+justify-content: center;
+height: 100px;
+width: 64%;
+background-color: #33323C;
+align-items: center;
+justify-content:space-around;
+margin: 0 auto;
+line-height: 35px;
+margin-top: 15%;
+}
+.search-btn{
+padding: 8px 45px;
+border: none;
+border-radius: 25px;
+background-color: #F9AB30;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+/* margin-left: 100px; */
+/* margin-left: 15%; */
+
+}
+label{
+    font-size: 20px;
+    color: #D5D6D8;
+}
+input{
+    background-color: #33323C;
+    border: none;
+    color: #5D5B64;
+}
+select{
+    background-color: #33313B;
+    border: none;
+    color: #6c6a74;
+}
+.fas{
+    color: #5D5B64;
+}
+.fal{
+    color: #5D5B64;
+}
+.date{
+    color: #5D5B64;   
+}
+
+/*------------------------
+   main section design
+----------------------*/
+ .second-section{
+    /* margin-top: 120px; */
+    display: flex;
+    justify-content: center;
+  
+}
+.row  i{
+font-size: 50px;
+color: #F9B343;
+}
+.row h6{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 15px;
+    /* width: auto; */
+    /* display: inline; */
+}
+.second-section p{
+width: 250px;
+font-size: 18px;
+color: #919599; 
+margin-top: 15px;
+}
+
+.second-section-right-text > h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+    margin-left: 30px;
+}
+.second-section-right-text > p{
+width: 507px !important;
+font-size: 20px ;
+/* margin-top: 30px; */
+margin-left: 30px;
+text-align: justify;
+
+
+} 
+.search-btn-second{
+    padding: 18px 35px;
+    border: none;
+    border-radius: 40px;
+    background-color: #F9AB30;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.management-details{
+margin-top: 170px;
+}
+.management-details  h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4;
+    
+}
+.management-details p{
+    width: 507px;
+    font-size: 20px ;
+    margin-top: 30px;
+    text-align: justify;
+    color: #919599;
+}
+.management-details img{
+margin-right: 0px;
+}
+.counting{
+display: grid;
+grid-template-columns: repeat(3, 200px);
+}
+.counting span{
+    font-size: 20px;
+    color: #6a6e72;
+}
+.counting h2{
+    margin-left: 50px;
+    color: #F9AB30;
+}
+.destination-section{
+        position: relative;
+        margin-top: 0px;
+        
+}
+.destination-section > h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+.country-1{
+    color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 17.5%;
+}
+.country-2{
+    color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 34.2%;
+}
+.country-3{
+    color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 50.7%;
+}
+.country-4{
+    color: #fff;
+    position: absolute;
+    top: 27%;
+    left: 67.7%;
+}
+.tours-count{
+    position: absolute;
+    top: 85%;
+    left: 26.25%;
+    border: none;
+    padding: 5px 17px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #46444d;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+    display: block;
+}
+.tours-count-second{
+    position: absolute;
+    top: 85%;
+    left: 43.02%;
+    border: none;
+    padding: 5px 17px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #46444d;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.tours-count-third{
+    position: absolute;
+    top: 85%;
+    left: 59.80%;
+    border: none;
+    padding: 5px 17px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #46444d;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.tours-count-fourth{
+    position: absolute;
+    top: 85%;
+    left: 76.55%;
+    border: none;
+    padding: 5px 17px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: #46444d;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.our-destination:hover .tours-count{
+    background-color: #F9AB30;
+}
+.our-destination:hover .tours-count-second{
+    background-color: #F9AB30;
+}
+.our-destination:hover .tours-count-third{
+    background-color: #F9AB30;
+}
+.our-destination:hover .tours-count-fourth{
+    background-color: #F9AB30;
+}
+.best-place{
+    display: grid;
+    grid-template-columns: repeat(4, 290px);
+    justify-content: center;
+}
+.best-place img{
+    border-radius: 5px;
+    margin-top: 50px;
+}
+.package-icon  i{
+    font-size: 20px;
+    color: #F9AB30;
+}
+.package-icon > span{
+    font-size: 18px;
+}
+.tour-info{
+    display: grid;
+    grid-template-columns: repeat(3, 390px);
+    row-gap: 40px;
+    justify-content: center;
+    margin-top: 55px;
+    flex-wrap: wrap;
+}
+.our-tour-destination> h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+.tour-details-btn{
+    padding: 10px;
+    width: 130px;
+    font-size: 18px;
+    background-color: #F9B343;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    position: absolute;
+    top: 51.5%;
+    left: 31%;
+    padding: 0 auto;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.card:hover .tour-details-btn{
+    background-color: #33313B;
+}
+
+.our-tour-destination{
+    margin-top: 120px;
+}
+.tourist-feedback{
+    background-image: url("images/background\ image.jpg"); 
+    height: auto;
+    margin-top: 140px;
+}
+.tourist-feedback > h1{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+}
+.client-details{
+    display: flex;
+    justify-content: center;
+    
+}
+.client-says{
+background-color: whitesmoke;
+width: 370px;
+padding: 24px 20px;
+border-radius: 5px;
+margin-right: 50px;
+height: 280px;
+margin-top: 60px;
+margin-bottom: 150px;
+}
+.client-says > p{
+    width: 300px;
+    color: #919599;
+    font-size: 18px;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+}
+.client-says > aside{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.client-says  p{
+    color: #919599;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.client-says h3{
+    font-size: 23px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+/* ----------------
+    blog section
+--------------- */
+.blog-section{
+display: flex;
+justify-content: center;
+column-gap: 50px;
+margin-top: 50px;
+}
+.blog-date{
+    display: flex;
+    flex-wrap: wrap;
+    width: 165px;
+    height: auto;
+    background-color:#F9AB31;
+    position: absolute;
+    padding: 5px;
+    top: 49%;
+    color: white;
+    border-top-right-radius: 45px;
+}
+.blog-date > h1{
+font-size: 50px;
+font-weight: 300;
+}
+.blog-section h3{
+width: 380px;
+font-weight: bold;
+color: #000000;
+
+}
+.blog-section h3:hover{
+    color: #F9AB30;
+    transition: 0.5s;
+    /* display: inline-block; */
+}
+.blog-title{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+}
+/*----------------
+    Footer
+-------------*/
+footer{
+background-image: url(images/background\ image3.jpg);
+    height: 500px;
+    margin-top: 130px;
+}
+footer h3{
+    margin-top: 120px;
+    font-size: 23px;
+    color: whitesmoke;
+}
+footer p{
+    margin-top: 40px;
+    font-size: 20px;
+    color: rgb(168, 146, 146) 
+}
+footer aside{
+    padding-top: 30px;
+    font-size: 25px;
+}
+footer aside a{
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(168, 146, 146) !important;
+    
+}
+footer aside a:hover{
+    color: whitesmoke !important;
+    transition: 0.5s;
+}
+footer p:hover{
+    color: whitesmoke;
+    transition: 0.5s;
+}
+hr{
+    color: whitesmoke;
+}
+
+/*--------------------
+    Media Query
+---------------*/
+@media (min-width:689px) and (max-width:1050px) {
+    .details{
+        display: none;
+    }
+    header{
+        height: 700px;
+    }
+    .second-section-right-text{
+        margin-top: 50px;
+margin-left: 50px;
+    }
+.management-details img{
+height: 750px !important;
+}
+.tour-details{
+margin-left: 50px;
+}
+.second-section i{
+    font-size: 35px;
+}
+
+}
