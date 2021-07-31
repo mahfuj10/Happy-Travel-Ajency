@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-------------------- CSS -------------------->
     <link rel="stylesheet" href="style.css">
-    <!-- ------------------- Font Fanily -------------- -->
+    <!-- ------------------- Font Family -------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
@@ -18,6 +18,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!----------------------- data aos ------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Happy Travels Vacations</title>
 </head>
@@ -25,8 +27,38 @@
                     <!----------------- This is header ------------------->
 <header>
 
-<nav class="navbar mt-0 pt-0  navbar-expand-lg  navbar-light">
+<nav  id="nav" class="navbar mt-0 pt-0  navbar-expand-lg  navbar-light">
+
+<div class="ms-lg-5 side-navbar">
+<div class="fs-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fas fa-bars text-light"></i></div>
+  
+<div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body text-center">
+   
+<a href="" class="fs-4"> World Best Place</a> <br>
+<aside class="mt-5">
+<a href="" class="fs-4"> Tour Destination </a><br>
+</aside>
+<aside class="mt-5">
+<a href="" class="fs-4"> Tourist Feedback </a><br>
+</aside>
+<aside class="mt-5">
+<a href="" class="fs-4"> Recent Blog  </a>
+</aside>
+<aside class="mt-5">
+<button class="contact-btn fw-bold">Contact us</button>
+</aside>  
+
+</div>
+</div>
+</div>
+
 <div class="container">
+ 
 <a class="navbar-brand py-0" href="#">
 <button class="first-button ms-5"> 
 <p style="font-size: 25px; letter-spacing: 1px; margin-bottom: 0;"> Vacation </p> <p style="font-size: 15px;"> TRAVEL AGENCY </p> 
@@ -53,25 +85,25 @@
 <a class="nav-link" href="#">Contact</a>
 </li>
 </ul>
-<button class="second-button rounded-3"> <a href="#">  Book Now </a> </button>
+<button class="second-button rounded-3 ms-lg-5 ms-3"> <a href="#">  Book Now </a> </button>
 </div>
 </div>
 </nav>
 
 <section>      
     
-<article class="audio-play-icon d-lg-flex align-items-center justify-content-center position-absolute shadow"> 
+<article class="audio-play-icon shadow d-lg-flex align-items-center justify-content-center position-absolute"> 
  <a href="http://127.0.0.1:5500/video.html">  <i class="fas fa-play"></i> </a>
 </article>
 
 <article class="text-center header-text">
 
-<p> Travel to the any corner of the world, without going around in circles</p>
-<h1>Make Your Tour Amazing</h1>
-<h1>With Us</h1>
+<p  data-aos="fade-up"> Travel to the any corner of the world, without going around in circles</p>
+<h1 data-aos="fade-up">Make Your Tour Amazing</h1>
+<h1 data-aos="fade-up">With Us</h1>
 </article>
 
-<article class="details d-lg-flex justify-content-around">  
+<article class="details d-lg-flex justify-content-around" data-aos="fade-up">  
 
     <article class="input-box">
     <label>Destination</label><br>
@@ -80,7 +112,7 @@
     </article>
 
 
-    <article class="input-box">
+    <article class="input-box mt-3 mt-lg-0">
       <label> Check-in date </label><br>
       <i class="fas fa-calendar-week"></i>
       <input class="date" type="date" placeholder="Search place">
@@ -88,13 +120,13 @@
 
 
 
-      <article class="input-box">
+      <article class="input-box mt-3 mt-lg-0">
         <label> Check-out date </label><br>
         <i class="fas fa-calendar-week"></i>
         <input class="date" type="date" placeholder="Search place">
         </article>
 
-  <article class="input-box">
+  <article class="input-box mt-3 mt-lg-0">
   <label for=""> Price Limit </label> <br>
   <select>
     <option value="">$5000</option>
@@ -127,7 +159,13 @@
                <!------------------- Main part ------------------->
 <main>
 
+<article>
+<a class="scroll-icon shadow-lg" href="#nav"><i class="fas fa-chevron-down"></i></a>
+<a class="scroll-icon-second shadow-lg" href="#footer"><i class="fas fa-chevron-down"></i></a>
+</article>
+
 <section class="second-section">
+
 <div class="container"> 
 <div class="row" style="margin-top: 120px;">
 
@@ -135,29 +173,29 @@
 <div class="container ms-xl-5 p-lg-0">  
 
 <div class="row">
-<div class="col-lg-6 col-6 ps-xl-5">
+<div class="col-lg-6 col-12 ps-xl-5" data-aos="fade-up">
 <i class="fas fa-skiing-nordic"></i>
 <h6> Activities </h6>
 <p> A small river named Duden flows by their place and supplies it with the necessary </p>
 </div>
-<div class="col-lg-6 col-6">
+<div class="col-lg-6 col-12 mt-5 mt-lg-0">
 
-<aside class="ms-2 ms-md-0">
+<aside class="ms-2 ms-md-0"  data-aos="fade-down">
 <i class="fas fa-route"></i>
 <h6> Travel Arrangements </h6>
 <p>A small river named Duden flows by their place and supplies it with the necessary</p>
 </aside>
 
 </div>
-<div class="col-lg-6 mt-5 ps-xl-5 col-6">
+<aside class="col-lg-6 mt-5 ps-xl-5 col-12"  data-aos="fade-down">
 <i class="fas fa-user-secret"></i>
 <h6> Private Guide </h6>
 <p> A small river named Duden flows by their place and supplies it with the necessary </p>
-</div>
+</aside>
 
-<div class="col-lg-6 mt-5 col-6">
+<div class="col-lg-6 mt-5 col-12">
 
-<aside class="ms-2 ms-md-0">
+<aside class="ms-2 ms-md-0" data-aos="fade-up">
 <i class="fas fa-map-marked-alt"></i>
 <h6> Location Manager </h6>
 <p> A small river named Duden flows by their place and supplies it with the necessary </p>
@@ -168,15 +206,14 @@
 </div>
 </div>
 
-<div class="col-xl-6 col-lg-4 col-12 second-section-right-text mt-5 mt-lg-0 m-lg-0 p-lg-0">
+<div class="col-xl-6 col-lg-4 col-12 second-section-right-text mt-5 mt-lg-0 m-lg-0 p-lg-0"  data-aos="fade-up">
 
-<!-- <h1 class="second-section-text-title d-xl-none ms-lg-3">It's time to start your adventure</h1> -->
 <h1 class="d-lg-none d-xl-block">It's time to start your <br> adventure</h1>
 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
 
 <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
 
-<button class="search-btn-second"><a href=""> Search Destination </a></button>
+<button class="search-btn-second fw-bold"><a href=""> Search Destination </a></button>
 </div>
 
 </div>
@@ -192,21 +229,21 @@
 </div>
 
 
-<div class="col-xl-6 col-12 col-lg-7 mt-lg-5 tour-details">
+<div class="col-xl-6 col-12 col-lg-7 mt-lg-5 tour-details"  data-aos="fade-up">
 <h1> Make Your Tour  Memorable <br> and Safe  With Us </h1>
 <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. </p>
 
-<article class="counting d-grid mt-4">
+<article class="counting d-lg-grid mt-4">
  <aside> 
   <h2 class="counter">285</h2>
   <span> Successful Tours </span>
 </aside> 
 <aside>
-  <h2 class="counter">22500</h2>
+  <h2 class="counter mt-5 mt-lg-0">22500</h2>
   <span>Our Happy Tourist </span>
 </aside>
 
-<aside class="mt-3 mt-md-0">
+<aside class="mt-5 mt-lg-0">
   <h2 class="counter">210</h2>
   <span> Place Explored </span>
 </aside>
@@ -222,7 +259,7 @@
 
 <h1 class="text-center">Best Place Destination</h1>
 
-<div class="best-place d-lg-grid">
+<div  class="best-place d-lg-grid">
 
 <div class="our-destination">
 <h3 class="country-1">Singapore</h3>
@@ -257,7 +294,7 @@
 <h1 class="text-center"> Tour Destination </h1>
 
 <article class="tour-info d-lg-grid justify-content-center">      
-<div class="card" style="width: 90%; height: 100%;">
+<div class="card" style="width: 90%; height: 100%;"  data-aos="fade-right">
     <img height="270" src="images/destination/image-5.jpg" class="card-img-top" alt="...">
     <button class="tour-details-btn"> $500/person </button>
     <div class="card-body mt-2">
@@ -272,7 +309,7 @@
     </div>
 </div>
 
-<div class="card" style="width: 90%; height: 100%">
+<div class="card" style="width: 90%; height: 100%"  data-aos="fade-down">
   <img height="270" src="images/destination/image-8.jpg" class="card-img-top" alt="...">
   <button class="tour-details-btn mt-2 mt-md-0"> $500/person </button>
   <div class="card-body mt-2">
@@ -288,7 +325,7 @@
 </div>
 
 
-<div class="card" style="width: 90%; height: 100%">
+<div class="card" style="width: 90%; height: 100%"  data-aos="fade-left">
   <img height="270" src="images/destination/image-6.jpg" class="card-img-top" alt="...">
   <button class="tour-details-btn mt-2 mt-md-0"> $500/person </button>
   <div class="card-body mt-2">
@@ -304,7 +341,7 @@
 </div>
 
 
-<div class="card" style="width: 90%; height: 100%;">
+<div class="card" style="width: 90%; height: 100%;"  data-aos="fade-right">
   <img height="270" src="images/destination/image-7.jpg" class="card-img-top" alt="...">
   <button class="tour-details-btn"> $500/person </button>
   <div class="card-body mt-2">
@@ -320,7 +357,7 @@
 </div>
 
 
-<div class="card" style="width: 90%; height: 100%;">
+<div class="card" style="width: 90%; height: 100%;"  data-aos="fade-up">
   <img height="270" src="images/destination/image-9.jpg" class="card-img-top" alt="...">
   <button class="tour-details-btn mt-2 mt-md-0"> $500/person </button>
   <div class="card-body mt-2">
@@ -336,7 +373,7 @@
 </div>
 
 
-<div class="card" style="width: 90%; height: 100%;">
+<div class="card" style="width: 90%; height: 100%;"  data-aos="fade-left">
   <img height="270" src="images/destination/image-10.jpeg" class="card-img-top" alt="...">
   <button class="tour-details-btn mt-2 mt-md-0"> $500/person </button>
   <div class="card-body mt-2">
@@ -376,34 +413,34 @@
     <div class="carousel-item active">
 
 <article class="client-details d-lg-flex justify-content-center">  
-        <div class="client-says">
+        <div class="client-says"  data-aos="fade-up">
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem impedit provident expedita excepturi fugiat delectus, eius magnam neque. </p>
         <aside>
         <img class="rounded-circle" src="images/client image/client image.jpg" width="80" alt="">
         <span>
-        <h3> Rayan Uddin </h3>
+        <h3> Rayan Ahmed</h3>
         <p> Company Ceo </p>
         </span>
         </aside>
         </div>
 
-          <div class="client-says">
+          <div class="client-says"  data-aos="fade-up">
           <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem impedit provident expedita excepturi fugiat delectus, eius magnam neque. </p>
           <aside>
           <img class="rounded-circle" src="images/client image/client image-3.jpg" width="80" alt="">
           <span>
-          <h3> Rayan Uddin </h3>
+          <h3> Mahin Rahman </h3>
           <p> Company Ceo </p>
           </span>
           </aside>
           </div>
 
-           <div class="client-says">
+           <div class="client-says"  data-aos="fade-up">
             <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem impedit provident expedita excepturi fugiat delectus, eius magnam neque. </p>
             <aside>
             <img class="rounded-circle" src="images/client image/client image-2.jpg" width="80" alt="">
             <span>
-            <h3> Rayan Uddin </h3>
+            <h3> Ariyana Alan  </h3>
             <p> Company Ceo </p>
             </span>
             </aside>
@@ -494,14 +531,7 @@
 
     </div>
   </div>
-  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon text-warning" aria-hidden="true"></span>
-    <span class="visually-hidden text-warning">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon text-warning" aria-hidden="true"></span>
-    <span class="visually-hidden text-warning">Next</span>
-  </button> -->
+
 </div>
 </section>
 
@@ -510,7 +540,7 @@
 <article> <h1 class="text-center blog-title" style="margin-top: 80px;"> Recent Blog </h1> </article>
 
 <div class="blog-section d-lg-flex justify-content-center">  
-<article class="mb-5 mb-lg-0" style="position: relative;">
+<article  data-aos="fade-up" class="mb-5 mb-lg-0" style="position: relative;">
 <aside>
 <span class="blog-date">
 <h1 class="ms-2">25</h1>
@@ -526,7 +556,7 @@
 </article>
 
 
-<article class="mb-5 mb-lg-0" style="position: relative;">
+<article  data-aos="fade-up" class="mb-5 mb-lg-0" style="position: relative;">
   <aside>
   <span class="blog-date">
   <h1 class="ms-2">25</h1>
@@ -541,7 +571,7 @@
   </aside>
   </article>
 
-  <article class="mb-5 mb-lg-0" style="position: relative;">
+  <article  data-aos="fade-up" class="mb-5 mb-lg-0" style="position: relative;">
     <aside>
     <span class="blog-date">
     <h1 class="ms-2">25</h1>
@@ -558,15 +588,23 @@
 </div> 
 </section>
 
+
+
+
 </main>
          <!--------------- this is footer ------------------->
 <footer>
-  
-<div class="container">  
+
+<div class="container" id="footer">  
 <div class="row">
 <div class="col-lg-3">
 <h3>Vacation</h3>
 <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+<aside class="contact-icon">
+  <i class="fab fa-facebook" data-aos="fade-right"></i>
+  <i class="fab fa-whatsapp ms-3" data-aos="fade-down"></i>
+  <i class="fab fa-facebook-messenger ms-3" data-aos="fade-left"></i>
+</aside>
 </div>
 
 <div class="col-lg-3 col-6">
@@ -615,7 +653,7 @@
 
 </footer>
 
-<a class="scroll-icon" href=""><i class="fas fa-chevron-down"></i></a>
+
 
 
 
@@ -626,6 +664,8 @@
 
 
 <!------------------ js file ------------------------>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="counter.js"></script>
 <!-- ------------- Bootstrap js -------------------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -1,10 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
+   
 }
 /*------------------------
     this is header
@@ -12,7 +15,7 @@ html{
 header{
 
     background-image: url(images/Website\ background.jpg);
-    height: 100%;
+    height: auto;
     background-size: cover;
 }
 /*  Navbar */
@@ -27,6 +30,26 @@ header{
     padding-top: 15px;
     margin-top: 0;
 }
+/* pffcanvas */
+.offcanvas-body{
+    margin-top: 50%;
+}
+.offcanvas-body a{
+    color: #848386 !important;
+}
+.offcanvas-body a:hover{
+    color: #fff !important;
+    transition: 0.5s;
+}
+.contact-btn{
+    border: none;
+    padding: 10px 56px;
+    background-color: #848386 !important;
+}
+.contact-btn:hover{
+    background-color: #fff !important;
+    transition: 0.5s;
+}
 nav li{
     margin-left: 30px;
 }
@@ -39,7 +62,6 @@ a{
 .second-button{
     background-color: #F9AB30;
     padding: 14px 20px;
-    margin-left: 50px;
     border: none;
     margin-top: 0px;
     font-family: 'Poppins', sans-serif;
@@ -58,10 +80,23 @@ a{
     background-color: #F9AB30;
     left: 50%;
     top: 30%;
+   
 }
+
 .fa-play{
     font-size: 15px;
     color: #fff !important;
+    transition-timing-function: linear;
+    animation: audio 8s infinite;
+}
+/* audio animation */
+@keyframes audio {
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(3600deg);
+    }
 }
 .header-text{
     margin-top: 15%;
@@ -83,7 +118,7 @@ background-color: #33323C;
 align-items: center;
 margin: 0 auto;
 line-height: 35px;
-margin-top: 15%;
+margin-top: 16.3%;
 }
 .search-btn{
 padding: 8px 45px;
@@ -207,19 +242,37 @@ grid-template-columns: repeat(3, 200px);
 /* scroll bar */
 
 .scroll-icon{
-     position: fixed;
-    width: 50px;
-    height: 50px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
     background-color: #F9AB30;
     display: flex;
     align-items: center;
-    margin-top: 250px;
-    top: 0;
-    left: 0;
+    top: 40%;
+    left: 97%;
+    z-index: 1; 
 }
+.scroll-icon-second{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #F9AB30;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 97%;
+    z-index: 1;
+}
+
 .scroll-icon i{
 color: #000000;
-font-size: 30px;
+font-size: 25px;
+margin: 0 auto;
+transform: rotate(180deg);
+}
+.scroll-icon-second i{
+color: #000000;
+font-size: 25px;
 margin: 0 auto;
 }
 /* destination */
@@ -241,13 +294,13 @@ margin: 0 auto;
     color: #fff;
     position: absolute;
     top: 27%;
-    left: 17.5%;
+    left: 20.1%;
 }
 .country-2{
     color: #fff;
     position: absolute;
     top: 27%;
-    left: 34.2%;
+    left: 35.4%;
 }
 .country-3{
     color: #fff;
@@ -259,12 +312,12 @@ margin: 0 auto;
     color: #fff;
     position: absolute;
     top: 27%;
-    left: 67.7%;
+    left: 66.2%;
 }
 .tours-count{
     position: absolute;
     top: 85%;
-    left: 26.25%;
+    left: 28.25%;
     border: none;
     padding: 5px 17px;
     border-bottom-left-radius: 25px;
@@ -278,7 +331,7 @@ margin: 0 auto;
 .tours-count-second{
     position: absolute;
     top: 85%;
-    left: 43.02%;
+    left: 43.55%;
     border: none;
     padding: 5px 17px;
     border-bottom-left-radius: 25px;
@@ -291,7 +344,7 @@ margin: 0 auto;
 .tours-count-third{
     position: absolute;
     top: 85%;
-    left: 59.80%;
+    left: 58.90%;
     border: none;
     padding: 5px 17px;
     border-bottom-left-radius: 25px;
@@ -304,7 +357,7 @@ margin: 0 auto;
 .tours-count-fourth{
     position: absolute;
     top: 85%;
-    left: 76.55%;
+    left: 74.20%;
     border: none;
     padding: 5px 17px;
     border-bottom-left-radius: 25px;
@@ -435,7 +488,7 @@ margin-top: 50px;
     background-color:#F9AB31;
     position: absolute;
     padding: 5px;
-    top: 49%;
+    top: 49.4%;
     color: white;
     border-top-right-radius: 45px;
 }
@@ -495,6 +548,11 @@ footer p:hover{
     color: whitesmoke;
     transition: 0.5s;
 }
+.contact-icon i{
+font-size: 35px;
+
+}
+
 hr{
     color: whitesmoke;
 }
@@ -504,18 +562,62 @@ hr{
 ---------------*/
 @media (max-width:688px) {
     header{
-        height: 50rem;
+        height: 100%;
+        /* position: relative; */
+    }
+    .side-navbar{
+        position: absolute;
+        top: 25px;
+        left: 2%;
+    }
+    .fa-bars{
+        color: #000000 !important;
+    }
+    .header-text{
+        margin-top: 70%;
+    }
+    .second-section-right-text h1{
+        margin-left: 5px;
+    }
+    .second-section-right-text p{
+        margin-left: 5px;
+    }
+    .second-section .row{
+        margin-top: 30px !important;
+    }
+    .search-btn-second{
+        margin-left: 5px;
+    }
+    header h1{
+        font-size: 40px !important;
+        margin-top: 1.5rem;
     }
     h1{
         font-size: 30px !important;
     }
     .audio-play-icon{
+     display: flex;
+      top: 30%;
+      left: 45%;
+    }
+    .details{
+        padding: 20px;
+        height: auto;
+        width: 70%;
+        background-color: #33323C;
+        line-height: 35px;
+        margin-top: 45%;
+        padding-left: 40px;
+        }
+    .search-btn{
+        padding: 2px 50px;
+        margin-top: 20px;
+    
+}
+    .scroll-icon, .scroll-icon-second{
         display: none;
     }
-   .details{
-     display: none;
- }
-    .scroll-icon{
+    .tour-details br{
         display: none;
     }
     .second-section p{
@@ -535,10 +637,10 @@ hr{
     
     }
     .counting{
-        grid-template-columns: repeat(2, 170px);
+     margin-left: 25%;   
     }
     .tour-details{
-        margin-left: 3.5%;
+        margin-left: 1.9%;
     }
     .best-place{
         padding-top: 0;
@@ -548,22 +650,22 @@ hr{
        margin-left: 15%;
     }
     .country-1{
-        color: #FFE77AFF;
+        color: #fff;
         top: 6.3%;
         left: 17.5%;
     }
     .country-2{
-        color: black;
+        color: #fff;
         top: 30.75%;
         left: 17.5%;
     }
     .country-3{
-        color: black;
+        color: #fff;
         top: 55%;
         left: 17.5%;
     }
     .country-4{
-        color: black;
+        color: #fff;
         top: 79%;
         left: 17.5%;
     }
@@ -595,6 +697,13 @@ hr{
     }
     .tourist-feedback{
         margin-top: 80px;
+    }
+    .client-says{
+        margin-bottom: 0;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     .blog-title{
         margin-top: 0 !important;
