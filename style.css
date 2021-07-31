@@ -1,9 +1,10 @@
 body{
     margin: 0;
     padding: 0;
-overflow-x: hidden;
-
-
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
 }
 /*------------------------
     this is header
@@ -15,10 +16,6 @@ header{
     background-size: cover;
 }
 /*  Navbar */
-.navbar{
-margin-top: 0px;
-padding-top: 0px;
-}
 
 .first-button{
     padding: 0px 25px;
@@ -59,10 +56,6 @@ a{
     height: 70px;
     border-radius: 50%;
     background-color: #F9AB30;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     left: 50%;
     top: 30%;
 }
@@ -77,20 +70,17 @@ a{
     color: #fff;
 }
 .header-text > h1{
-    font-size: 55px;
+    font-size: 3.5rem;
     letter-spacing: 4px;
     color: whitesmoke;
     font-weight: bold;
     font-family: 'Courgette', cursive;
 }
 .details{
-display: flex;
-justify-content: center;
 height: 100px;
 width: 64%;
 background-color: #33323C;
 align-items: center;
-justify-content:space-around;
 margin: 0 auto;
 line-height: 35px;
 margin-top: 15%;
@@ -136,7 +126,7 @@ select{
 /* second section */
  .second-section{
     /* margin-top: 120px; */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
   
 }
@@ -159,7 +149,7 @@ margin-top: 15px;
 }
 
 .second-section-right-text > h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
     line-height: 1.2;
@@ -187,7 +177,7 @@ text-align: justify;
 margin-top: 170px;
 }
 .management-details  h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
     line-height: 1.4;
@@ -204,7 +194,6 @@ margin-top: 170px;
 margin-right: 0px;
 }
 .counting{
-display: grid;
 grid-template-columns: repeat(3, 200px);
 }
 .counting span{
@@ -225,10 +214,6 @@ grid-template-columns: repeat(3, 200px);
     display: flex;
     align-items: center;
     margin-top: 250px;
-    /* position: fixed; */
-    /* position: absolute;*/
-    /* float: right; */
-    /* position: fixed; */
     top: 0;
     left: 0;
 }
@@ -238,13 +223,17 @@ font-size: 30px;
 margin: 0 auto;
 }
 /* destination */
-.destination-section{
-        position: relative;
-        margin-top: 0px;
-        
+
+.best-place{
+    grid-template-columns: repeat(4, 18.2rem);
+    justify-content: center;
+}
+.best-place img{
+    border-radius: 5px;
+    margin-top: 50px;
 }
 .destination-section > h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
 }
@@ -337,15 +326,7 @@ margin: 0 auto;
 .our-destination:hover .tours-count-fourth{
     background-color: #F9AB30;
 }
-.best-place{
-    display: grid;
-    grid-template-columns: repeat(4, 290px);
-    justify-content: center;
-}
-.best-place img{
-    border-radius: 5px;
-    margin-top: 50px;
-}
+
 .package-icon  i{
     font-size: 20px;
     color: #F9AB30;
@@ -353,16 +334,14 @@ margin: 0 auto;
 .package-icon > span{
     font-size: 18px;
 }
+/* our-tour-destination */
 .tour-info{
-    display: grid;
-    grid-template-columns: repeat(3, 390px);
+    grid-template-columns: repeat(3, 24.3rem);
     row-gap: 40px;
-    justify-content: center;
     margin-top: 55px;
-    flex-wrap: wrap;
 }
 .our-tour-destination> h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
 }
@@ -388,6 +367,8 @@ margin: 0 auto;
 .our-tour-destination{
     margin-top: 120px;
 }
+/* tourist feedback*/
+
 .tourist-feedback{
     background-image: url("images/background\ image.jpg"); 
     height: auto;
@@ -399,11 +380,11 @@ margin: 0 auto;
     font-family: 'Lato', sans-serif;
     padding-top: 50px;
 }
-.client-details{
+/* .client-details{
     display: flex;
     justify-content: center;
     
-}
+} */
 .client-says{
 background-color: whitesmoke;
 width: 370px;
@@ -441,8 +422,8 @@ margin-bottom: 150px;
     blog section
 --------------- */
 .blog-section{
-display: flex;
-justify-content: center;
+/* display: flex;
+justify-content: center; */
 column-gap: 50px;
 margin-top: 50px;
 }
@@ -459,14 +440,13 @@ margin-top: 50px;
     border-top-right-radius: 45px;
 }
 .blog-date > h1{
-font-size: 50px;
+font-size: 3.2rem;
 font-weight: 300;
 }
 .blog-section h3{
-width: 380px;
+width: 23.75rem;
 font-weight: bold;
 color: #000000;
-
 }
 .blog-section h3:hover{
     color: #F9AB30;
@@ -522,6 +502,151 @@ hr{
 /*--------------------
     Media Query
 ---------------*/
+@media (max-width:688px) {
+    header{
+        height: 50rem;
+    }
+    h1{
+        font-size: 30px !important;
+    }
+    .audio-play-icon{
+        display: none;
+    }
+   .details{
+     display: none;
+ }
+    .scroll-icon{
+        display: none;
+    }
+    .second-section p{
+        width: 100%;
+    }
+    .second-section-right-text  p{
+        width: 90% !important;
+    }
+    .blog-section img{
+        width: 90%;
+    }
+    .management-details p{
+        width: 90%;
+    }
+    .management-details{
+        margin-top: 80px;
+    
+    }
+    .counting{
+        grid-template-columns: repeat(2, 170px);
+    }
+    .tour-details{
+        margin-left: 3.5%;
+    }
+    .best-place{
+        padding-top: 0;
+    }
+    .best-place img{
+        margin-top: 35px;
+       margin-left: 15%;
+    }
+    .country-1{
+        color: #FFE77AFF;
+        top: 6.3%;
+        left: 17.5%;
+    }
+    .country-2{
+        color: black;
+        top: 30.75%;
+        left: 17.5%;
+    }
+    .country-3{
+        color: black;
+        top: 55%;
+        left: 17.5%;
+    }
+    .country-4{
+        color: black;
+        top: 79%;
+        left: 17.5%;
+    }
+   .tours-count{
+        top: 23%;
+        left: 60%;
+    }
+    .tours-count-second{
+        top: 47%;
+        left: 60%;
+    }
+    .tours-count-third{
+        top: 71.70%;
+        left: 60%;
+    }
+    .tours-count-fourth{
+        top: 95.8%;
+        left: 60%;
+    }
+    .our-tour-destination{
+        margin-top: 70px;
+    }
+    .card{
+        margin-bottom: 40px;
+        margin-left: 4.5%;
+    }
+    .tourist-feedback > h1{
+       padding-top: 0;
+    }
+    .tourist-feedback{
+        margin-top: 80px;
+    }
+    .blog-title{
+        margin-top: 0 !important;
+    }
+   .blog-section{
+       margin-left: 7%;
+   }
+   .blog-section img{
+       height: 250px !important;
+   }
+  .blog-date{
+    width: 135px;
+    padding: 0px;
+    height: 60px;
+    top: 45.4%;
+    color: white;
+    border-top-right-radius: 35px;
+}
+   .blog-date > h1{
+    font-size: 2rem !important;
+    margin-top: 10px;
+}
+   .blog-section h3{
+    width: 20rem;
+}  
+.blog-section p{
+    width: 19rem !important;
+    text-align: justify;
+}
+/* foooter */
+footer{
+    height: 100%;
+}
+footer h3{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 @media (min-width:689px) and (max-width:1050px) {
 body{
 overflow-x: hidden;
@@ -557,4 +682,13 @@ margin-left: 50px;
 font-size: 35px;
 }
 
+.tour-info{
+    grid-template-columns: repeat(2, 390px);
+}
+
+.client-details{
+    display: flex;
+    justify-content: center;
+    
+}
 }
