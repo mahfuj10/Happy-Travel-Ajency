@@ -9,6 +9,54 @@ html{
     scroll-behavior: smooth;
    
 }
+/* ------------------
+      preloader
+---------------- */
+.loader-bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 70px);
+    left: calc(50vw - 75px);
+}
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+} 
+.loader:before{
+    animation-delay: .5s;
+}
+@keyframes loader {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
 /*------------------------
     this is header
 -------------------*/
@@ -39,12 +87,7 @@ header{
     background-color: #fff !important;
     transition: 0.5s;
 }
-.btn-close{
-/* color: #fff !important; */
-}
-.text-reset{
-    color: #F9AB30;
-}
+
 /*  Navbar */
 
 .first-button{
@@ -86,8 +129,7 @@ a{
     border-radius: 50%;
     background-color: #F9AB30;
     left: 50%;
-    top: 30%;
-   
+    top: 30%;   
 }
 
 .fa-play{
@@ -423,7 +465,6 @@ margin: 0 auto;
 .card:hover .tour-details-btn{
     background-color: #33313B;
 }
-
 .our-tour-destination{
     margin-top: 120px;
 }
@@ -440,11 +481,6 @@ margin: 0 auto;
     font-family: 'Lato', sans-serif;
     padding-top: 50px;
 }
-/* .client-details{
-    display: flex;
-    justify-content: center;
-    
-} */
 .client-says{
 background-color: whitesmoke;
 width: 370px;
@@ -721,11 +757,11 @@ hr{
    .blog-section img{
        height: 250px !important;
     }
-  .blog-date{
+   .blog-date{
     width: 135px;
     padding: 0px;
     height: 60px;
-    top: 45.4%;
+    top: 45.6%;
     color: white;
     border-top-right-radius: 35px;
     }
@@ -785,7 +821,22 @@ margin-left: 50px;
 .country-4{
     top: 62%; 
     left: 5%;
-    color: #000000;
+}
+.tours-count{
+    top: 46%;
+    left: 19.65%;
+}
+.tours-count-second{
+    top: 46%;
+    left: 50.85%;
+}
+.tours-count-third{
+    top: 46%;
+    left: 82.15%;
+}
+.tours-count-fourth{
+    top: 93%;
+    left: 19.65%;
 }
 .second-section i{
 font-size: 35px;
@@ -813,10 +864,13 @@ margin-left: 0%;
     grid-template-columns: repeat(3, 320px);
 }
 .destination-section{
-    margin-top: 80px;
+    margin-top: 120px !important;
 }
 .blog-date{
     top: 50%;
+}
+.audio-play-icon{
+top: 35%;
 }
 footer{
     height: auto;
