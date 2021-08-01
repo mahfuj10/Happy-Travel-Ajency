@@ -18,19 +18,8 @@ header{
     height: auto;
     background-size: cover;
 }
-/*  Navbar */
 
-.first-button{
-    padding: 0px 25px;
-    background-color: #33313B;
-    color: #fff;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    height: 90px;
-    padding-top: 15px;
-    margin-top: 0;
-}
-/* pffcanvas */
+/* offcanvas */
 .offcanvas-body{
     margin-top: 50%;
 }
@@ -49,6 +38,24 @@ header{
 .contact-btn:hover{
     background-color: #fff !important;
     transition: 0.5s;
+}
+.btn-close{
+/* color: #fff !important; */
+}
+.text-reset{
+    color: #F9AB30;
+}
+/*  Navbar */
+
+.first-button{
+    padding: 0px 25px;
+    background-color: #33313B;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    height: 90px;
+    padding-top: 15px;
+    margin-top: 0;
 }
 nav li{
     margin-left: 30px;
@@ -608,12 +615,12 @@ hr{
         line-height: 35px;
         margin-top: 45%;
         padding-left: 40px;
-        }
+    }
     .search-btn{
         padding: 2px 50px;
         margin-top: 20px;
     
-}
+    }
     .scroll-icon, .scroll-icon-second{
         display: none;
     }
@@ -710,10 +717,10 @@ hr{
     }
    .blog-section{
        margin-left: 7%;
-   }
+    }
    .blog-section img{
        height: 250px !important;
-   }
+    }
   .blog-date{
     width: 135px;
     padding: 0px;
@@ -721,83 +728,98 @@ hr{
     top: 45.4%;
     color: white;
     border-top-right-radius: 35px;
-}
+    }
    .blog-date > h1{
     font-size: 2rem !important;
     margin-top: 10px;
-}
+    }
    .blog-section h3{
     width: 20rem;
-}  
-.blog-section p{
+    }  
+   .blog-section p{
     width: 19rem !important;
     text-align: justify;
-}
+    }
 /* foooter */
-footer{
+   footer{
     height: 100%;
-}
-footer h3{
+    }
+   footer h3{
     margin-top: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 }
+
+
 @media (min-width:689px) and (max-width:1050px) {
-body{
-overflow-x: hidden;
-}
-
-html{
-overflow-x: hidden;
-}
 
 .details{
 width: 90%;
 margin-top: 16.3%;
 }
-
 header{
 height: 700px;
 }
-
 .second-section-right-text{
 margin-top: 50px;
 margin-left: 50px;
 }
-
 .management-details img{
 height: 550px !important;
 }
-
 .tour-details{
 margin-left: 50px;
 }
-
+.country-1{
+    top: 15%;
+    left: 5%;
+}
+.country-2{
+    top: 15%;
+    left: 36.3%;
+}
+.country-3{
+    top: 15%;
+    left: 67%;
+}
+.country-4{
+    top: 62%; 
+    left: 5%;
+    color: #000000;
+}
 .second-section i{
 font-size: 35px;
 }
-
 .tour-info{
-    grid-template-columns: repeat(2, 390px);
+grid-template-columns: repeat(2, 390px);
+}
+.client-details{
+ display: flex;
+ flex-wrap: wrap;
+
+}
+.client-says{
+    margin-bottom: 0 !important;
+}
+.second-section-right-text{
+margin-left: 0%;
+}
+.management-details img{
+    width: 350px !important;
+    height: 400px !important;
+    margin-top: 30px;
+}
+.best-place{
+    grid-template-columns: repeat(3, 320px);
+}
+.destination-section{
+    margin-top: 80px;
+}
+.blog-date{
+    top: 50%;
+}
+footer{
+    height: auto;
 }
 
-.client-details{
-    display: flex;
-    justify-content: center;
-    
-}
 }
