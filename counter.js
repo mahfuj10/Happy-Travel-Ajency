@@ -5,11 +5,13 @@ $(document).ready(function(){
         time: 1200
     });
 });
+
 // data aos
 AOS.init({
     duration: 2000,
     once: true,
     });
+    
 // preloader
 setTimeout(function(){
         $('.loader-bg').fadeToggle();
