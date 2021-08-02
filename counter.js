@@ -1,14 +1,14 @@
 // counting
-$(document).ready(function(){
-    $(".counter").counterUp({
-        delay: 10,
-        time: 1200
-    });
-});
+// $(document).ready(function(){
+//     $(".counter").counterUp({
+//         delay: 10,
+//         time: 1200
+//     });
+// });
 
 // data aos
 AOS.init({
-    duration: 2000,
+    duration: 1200,
     once: true,
     });
     

@@ -3,7 +3,7 @@ body{
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
 }
 html{
     overflow-x: hidden;
@@ -715,19 +715,19 @@ hr{
     }
    .tours-count{
         top: 23%;
-        left: 60%;
+        left: 55.80%;
     }
     .tours-count-second{
         top: 47%;
-        left: 60%;
+        left: 55.80%;
     }
     .tours-count-third{
         top: 71.70%;
-        left: 60%;
+        left: 55.80%;
     }
     .tours-count-fourth{
         top: 95.8%;
-        left: 60%;
+        left: 55.80%;
     }
     .our-tour-destination{
         margin-top: 70px;
