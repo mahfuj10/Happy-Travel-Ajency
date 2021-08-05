@@ -1,3 +1,4 @@
+/* body */
 body{
     margin: 0;
     padding: 0;
@@ -611,11 +612,12 @@ hr{
     }
     .side-navbar{
         position: absolute;
-        top: 25px;
+        top: 120%;
         left: 2%;
     }
-    .fa-bars{
-        color: #000000 !important;
+    .navbar-toggler{
+        margin-right: 5% !important;
+        background-color: #fff;
     }
     .header-text{
         margin-top: 70%;
@@ -786,7 +788,6 @@ hr{
     }
 
 }
-
 
 @media (min-width:688px) and (max-width:1050px) {
 
